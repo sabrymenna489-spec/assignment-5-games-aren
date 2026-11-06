@@ -1,0 +1,525 @@
+:root {
+    scrollbar-gutter: auto;
+     --main-color:#CBFE1C
+}
+
+
+
+.main-color
+{
+    color: var(--main-color);
+}
+.main-bg-color
+{
+    background-color: var(--main-color);
+}
+
+
+.container{
+   padding-block: 10px;
+    
+      font-size: 16px;
+     font-weight: 400;
+    
+}
+.navbar-brand {
+    color: #C6F81C;
+}
+
+.item-nav {
+    color: #C6F81C;
+
+}
+.item-hover:hover{
+    color: #C6F81C;
+    cursor: pointer;
+
+}.nav-button{
+    background-color: #C6F81C;
+    color: black;
+    border: 2px solid #C6F81C;
+}
+
+
+
+.hero .container{
+    padding-top: 50px;
+}
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+        url("../images/images-20261030T182841Z-1-001/images/hero-bg.jpg");
+
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top:50px;
+}
+
+.gaming-title {
+    color: #c6ff00;
+}
+
+.gaming-btn,
+.gaming-btn-outline {
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.gaming-btn {
+    background-color: #c6ff00;
+    color: black;
+    border: 2px solid #c6ff00;
+}
+
+.gaming-btn-outline {
+    background-color: transparent;
+    color: #c6ff00;
+    border: 2px solid #c6ff00;
+}
+
+.hero-image img {
+    border: 4px solid #c6ff00;
+    border-radius: 20px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.player-card {
+    bottom: -25px;
+    left: -25px;
+    background-color: #101828;
+    border: 1px solid #344054;
+    border-radius: 10px;
+    padding: 20px 25px;
+    color: white;
+    min-width: 190px;
+}
+
+.player-icon {
+    font-size: 25px;
+}
+
+.player-card p {
+    color: #98a2b3;
+    font-size: 13px;
+}
+
+.player-card h4 {
+    font-weight: bold;
+}
+
+.games-section {
+    background-color: #0b0e12;
+}
+
+.heading-line {
+    display: block;
+    width: 40px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: #c6ff00;
+}
+
+.games-section .text-success {
+    color: #c6ff00;
+}
+
+
+
+.contact-card {
+    background-color:#1E2939;
+    border: 1px solid #303640;
+    border-radius: 15px;
+    padding: 25px;
+}
+.contact-icon{
+    background-color: #CBFE1C;
+    width:55px;
+ height:55px;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card h5{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contact-card p{
+    color: #98a2b3;
+    font-size: 14px;
+    
+}
+.community-card{
+    background-color:#6CE963;
+    border: 1px solid #303640;
+    border-radius: 15px;
+    padding: 25px;
+    color: black;
+}
+.community-card h4{
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+.community-card p{
+    color: black;
+    font-size: 14px;
+    
+}
+.social-icons a{
+    color: #CBFE1C;
+     height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    Justify-content: center;
+    align-items: center;
+}
+.social-icons{
+    display: flex;
+    gap: 12px;
+}
+.contact-form {
+    background-color:#1E2939;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+}
+
+.contact-form h3 {
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    background-color: #354c65;
+    border: 1px solid #526981;
+    color: white;
+}
+
+.contact-form .form-control::placeholder {
+    color: #aab6c3;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #dfff00;
+    box-shadow: 0 0 5px #dfff00;
+}
+
+.contact-form button {
+    background-color:#CBFE1C;
+    border: none;
+    padding: 12px;
+    color: black;
+}
+
+.CONTACT-US i
+{
+    width: 50px;
+    height: 50px;
+}
+.bg-input
+{
+    background-color: #364153;
+} 
+
+
+ 
+
+
+/* 
+latest game */
+.game-card {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    line-height: 0;
+    transition: 0.3s;
+}
+
+.game-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-info {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+    line-height: normal;
+}
+
+.game-card:hover {
+    border-color: #dfff00;
+}
+
+.game-card:hover .game-info {
+    opacity: 1;
+}
+.game-footer{
+    color:  #C6F81C;
+}
+.game-a:hover{
+    color:  #C6F81C;
+}
+.list-unstyled a{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    
+
+
+
+}
+.btn-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid gray 2px;
+    
+}
+.btn-icon:hover{
+     color:  #C6F81C;
+     border: solid 2px  #C6F81C;
+
+}
+.button-latestgame{
+    padding: 20px;
+    margin-left: 20px;
+    border:  #C6F81C solid 2px;
+    color:  #C6F81C;
+    background-color: black;
+    border-radius: 15px;
+
+}
+.button-latestgame:hover{
+    background-color: #99b441;
+
+}
+.title{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.line {
+    width:50px;
+    height: 2px;
+    background-color: #CBFE1C;
+
+
+
+  
+
+}
+.gameword{
+    color: #C6F81C;
+}
+
+
+
+
+/* anamation */
+ .WHAT-WE-DO h5::before
+{
+    content:"";
+    width:50px;
+    height:2px ;
+    position: absolute;
+    top:50%;
+    background-color:var(--main-color);
+    transform:translateY(-50%) ;
+    right: 42%;
+}
+.WHAT-WE-DO h5::after
+{
+    content:"";
+    width:50px;
+    height:2px ;
+    position: absolute;
+    top:50%;
+    background-color:var(--main-color);
+    transform:translateY(-50%) ;
+    left: 42%;
+}
+.b-div
+{
+    border: 1px solid lightslategrey;
+}
+.p-div
+{
+    padding: 130px 100px;
+}
+.WHAT-WE-DO .inner
+{
+    background-color: #1A1A1A;
+    overflow: hidden;
+    transition: all 2s;
+}
+.WHAT-WE-DO .inner:hover
+{
+    border-color: var(--main-color);
+}
+.WHAT-WE-DO .inner::before
+{
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    border-top: 15px solid var(--main-color);
+    border-right:15px solid transparent ;
+}
+.WHAT-WE-DO .inner::after
+{
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    border-bottom: 15px solid var(--main-color);
+    border-left:15px solid transparent ;
+}
+.WHAT-WE-DO .inner:hover::before,
+.WHAT-WE-DO .inner:hover::after
+{
+    opacity: 1;
+}
+@keyframes scroll
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-50%);
+    }
+}
+.logo
+{
+    display: flex;
+    width: max-content;
+    animation:scroll 15s linear infinite;
+}
+@keyframes scroll-reverse
+{
+    0%
+    {
+        transform: translateX(-50%);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+.logo-reverse
+{
+    display: flex;
+    width: max-content;
+    animation:scroll-reverse 15s linear infinite;
+}
+@keyframes scroll
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-50%);
+    }
+}
+.logo
+{
+    display: flex;
+    width: max-content;
+    animation:scroll 15s linear infinite;
+}
+@keyframes scroll-reverse
+{
+    0%
+    {
+        transform: translateX(-50%);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+.logo-reverse
+{
+    display: flex;
+    width: max-content;
+    animation:scroll-reverse 15s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+.team-name {
+   transform: rotate(90deg);
+   margin-bottom: 50px;
+}
+
+  
+.team-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    transition: transform 0.5s ;
+    overflow: hidden;
+}
+.team1:hover .team-overlay {
+    transform: translateY(-100%);
+    overflow: hidden;
+    
+}
+
+
+
+
+
+
+
